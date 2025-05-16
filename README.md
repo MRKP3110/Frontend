@@ -31,13 +31,16 @@ Contains Tailwind CSS configuration files and any custom utility styles created 
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name/frontend
+bash:
+
+    git clone https://github.com/your-username/your-repo-name.gitcd your-repo-name/frontend
+
+---
 
 ## Run The Projects
 
 Open the index.html file directly in your browser.
+
 
 ## 📦 Technologies Used
 
