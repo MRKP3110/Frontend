@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="">
+    
+    <div class=" h-screen w-full mt-8 sm:mt-0 ">
+
+        <div class=" px-5 md:px-3 md:py-3 py-2  bg-purple-400 h-25 w-full">
+
+            <!-- navebar -->
+            <nav class=" flex  items-center justify-between w-full h-full" >
+                
+                <!-- log0 -->
+                <a href="#" id="logo" class=" text-black font-bold text-2xl ">
+                    SUITE-X
+                </a>
+    
+                <!-- searchbar -->
+                <input class=" border-1 border-black text-black rounded-3xl p-1 lg:w-80 md:w-50 w-55 " type="text" placeholder="Search" />
+    
+                <!-- Desktop menu -->
+                   
+                <div class=" text-black  " >
+                    <div class="  hidden md:flex justify-evenly items-center  cursor-pointer h-10 bg-purple-400 lg:w-100 md:w-80 ">
+                        <a href="#" class=" transition duration-300 ease-in scale-100 hover:scale-140 broder rounded-full  w-20 p-1 text-center bg-purple-300">
+                            Home
+                        </a>
+    
+                        <a href="#" class=" transition duration-300 ease-in scale-100 hover:scale-140 broder rounded-full  w-20 p-1 text-center ">
+                            About us
+                        </a>
+                    
+                        <div class=" relative  w-20 p-1 text-center" id="dropdownButton">
+    
+                            <div 
+                                onclick="toggleDropdown()"
+                                class="  transition duration-300 ease-in scale-100 hover:scale-140 broder rounded-full ">
+                                    Services
+                            </div>
+    
+                            <div 
+                                id="dropdown"
+                                class="   border-solid border-gray-300 rounded bg-white text-black text-start absolute  top-[60px] right-[30px] w-[250px] h-[295px] shadow-md hidden space-y-2 select-none z-50">
+    
+                                <div class=" cursor-pointer hover:bg-gray-300 p-3 mt-3">
+                                    <a href="#">
+                                        Text Encryption
+                                    </a>
+                                </div>
+                                <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                    <a href="#">
+                                        Homomorphic Encryption
+                                    </a>
+                                </div>
+                                <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                    <a href="#">
+                                        Text convertor
+                                    </a>
+                                </div>
+                                <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                    <a href="#">
+                                        Background Remover
+                                    </a>
+                                </div>
+                                <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                    <a href="#">
+                                        Text Editor
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+   
+                    <a href="#" class=" transition duration-300 ease-in scale-100 hover:scale-140 broder rounded-full  w-20 p-1 text-center">
+                        Login
+                    </a>
+
+                </div>
+            </div>
+                
+    
+            <!-- hamburger -->
+            <a href="#" id="burger" class="text-black text-2xl md:hidden">
+                <img src="../../Media/Logo/bx-menu.svg">
+            </a>
+    
+            <!-- Mobile Menu -->
+    
+            <div id="list" class=" md:hidden flex flex-col justify-center items-center space-y-7 bg-purple-400 absolute top-0 bottom-0 left-0 w-60 transform -translate-x-full transition:transform duration-300 z-50 ">
+                    <a class=" transition duration-300 ease-in scale-100 hover:scale-140  w-full text-center items-center h-10 p-2" href="#">
+                        Home
+                    </a>
+                    <a class=" transition duration-300 ease-in scale-100 hover:scale-140 w-full text-center items-center h-10 p-2" href="#">
+                        About us
+                    </a>
+                        
+                    <div class=" relative w-full cursor-pointer" id="dropdownButton1">
+                           
+                        <div 
+                            onclick="toggleDropdown1()"
+                            class=" w-full text-center items-center h-10 p-2 transition duration-300 ease-in scale-100 hover:scale-140">
+                                Services
+                        </div>
+    
+                        <div 
+                            id="dropdown1"
+                            class="   border-solid border-gray-300 rounded bg-white text-black  absolute  left-[158px]  top-[-1px] w-[250px]  h-[295px] hidden space-y-2 select-none z-50 ">
+    
+                            <div class=" cursor-pointer hover:bg-gray-300 p-3 mt-3">
+                                <a href="#">
+                                    Text Encryption
+                                </a>
+                            </div>
+                            <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                <a href="#">
+                                    Homomorphic Encryption
+                                </a>
+                            </div>
+                            <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                <a href="#">
+                                    Text convertor
+                                </a>
+                            </div>
+                            <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                <a href="#">
+                                    Background Remover
+                                </a>
+                            </div>
+                            <div class=" cursor-pointer hover:bg-gray-300 p-3">
+                                <a href="#">
+                                    Text Editor
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                        <a class=" transition duration-300 ease-in scale-100 hover:scale-140  w-full text-center items-center h-10 p-2" href="#">
+                            Login
+                        </a>
+                </div>
+            </nav>
+        </div>
+    
+
+         <!-- content -->
+
+        <div class=" flex justify-center items-center w-full h-screen bg-linear-to-l from-purple-200 to-white">
+
+            <div class=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6  mt-5 sm:mt-0 lg:mt-0 mb-6 md:mb-0 lg:mb-0">
+        
+                <div class=" rounded-3xl h-[90px] w-[250px] md:h-[150px] md:w-[250px]  lg:h-[190px] lg:w-[310px]  transition scale-100 ease-in hover:scale-110">
+
+                    <a href="#" class=" cursor-pointer">
+                        <div class=" bg-green-100 border-3 border-green-400 p-5 h-[90px] w-[250px] md:h-[150px] md:w-[250px] lg:h-[190px] lg:w-[310px]  rounded-3xl flex flex-col justify-center items-center text-green-500 shadow-2xl"> 
+                            <svg class=  " fill-current text-green-500 " width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"/></svg>
+                            <span class="mt-3">
+                                Text Encryption
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="  rounded-3xl  h-[90px] w-[250px] md:h-[150px] md:w-[250px]  lg:h-[190px] lg:w-[310px] transition scale-100 ease-in hover:scale-110">
+                    <a href="#" class=" cursor-pointer">
+                        <div class=" bg-purple-200 border-3 border-purple-400 p-5 h-[90px] w-[250px] md:h-[150px] md:w-[250px] lg:h-[190px] lg:w-[310px]  rounded-3xl flex flex-col justify-center items-center text-purple-500 shadow-2xl"> 
+                            <svg class=  " fill-current text-purple-500 " width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"/></svg>
+                            <span class="mt-3">
+                                Image Recognition
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="  rounded-3xl  h-[90px] w-[250px] md:h-[150px] md:w-[250px]  lg:h-[190px] lg:w-[310px] transition scale-100 ease-in hover:scale-110">
+                    <a href="#" class=" cursor-pointer">
+                        <div class=" bg-green-100 border-3 border-green-400 p-5 h-[90px] w-[250px] md:h-[150px] md:w-[250px] lg:h-[190px] lg:w-[310px]  rounded-3xl flex flex-col justify-center items-center text-green-500 shadow-2xl"> 
+                            <svg class= " fill-current text-green-500 " width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"/></svg>
+                            <span class="mt-3">
+                                Homomorphic Encryption
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="  rounded-3xl  h-[90px] w-[250px] md:h-[150px] md:w-[250px]  lg:h-[190px] lg:w-[310px] transition scale-100 ease-in hover:scale-110">
+                    <a href="#" class=" cursor-pointer">
+                        <div class=" bg-purple-200 border-3 border-purple-400 p-5 h-[90px] w-[250px] md:h-[150px] md:w-[250px] lg:h-[190px] lg:w-[310px]  rounded-3xl flex flex-col justify-center items-center text-purple-500 shadow-2xl"> 
+                            <svg class=  " fill-current text-purple-500 " width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"/></svg>
+                            <span class="mt-3">
+                                File Conversion
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class=" rounded-3xl  h-[90px] w-[250px] md:h-[150px] md:w-[250px]  lg:h-[190px] lg:w-[310px] transition scale-100 ease-in hover:scale-110">
+                    <a href="#" class=" cursor-pointer">
+                        <div class=" bg-green-100 border-3 border-green-400 p-5 h-[90px] w-[250px] md:h-[150px] md:w-[250px] lg:h-[190px] lg:w-[310px]  rounded-3xl flex flex-col justify-center items-center text-green-500 shadow-2xl"> 
+                            <svg class=  " fill-current text-green-500 " width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"/></svg>
+                            <span class="mt-3">
+                                Background Removal
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class=" rounded-3xl  h-[90px] w-[250px] md:h-[150px] md:w-[250px]  lg:h-[190px] lg:w-[310px] transition scale-100 ease-in hover:scale-110">
+                    <a href="#" class=" cursor-pointer">
+                        <div class=" bg-purple-200 border-3 border-purple-400 p-5 h-[90px] w-[250px] md:h-[150px] md:w-[250px] lg:h-[190px] lg:w-[310px]  rounded-3xl flex flex-col justify-center items-center text-purple-500 shadow-2xl"> 
+                            <svg class= " fill-current text-purple-500 " width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20 12c0-1.103-.897-2-2-2h-1V7c0-2.757-2.243-5-5-5S7 4.243 7 7v3H6c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-8zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v3H9V7z"/> </svg>
+                            <span class="mt-3">
+                                Text Extraction
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class=" flex justify-evenly items-center lg:h-[280px]  w-full ">
+            <div class=" lg:h-[280px] md:h-[620px] w-full bg-purple-400  grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 lg:gap-0 lg:p-[30px]  md:gap-2 gap-10 ">
+    
+                <div class=" flex   flex-col justify-start items-center md:mt-4 mt-4 sm:mt-0 w-full ">
+                    <h2 class=" text-xl text-black underline decoration-1">
+                        Connect with us
+                    </h2>
+                    <ul class=" flex mt-3 w-33 justify-evenly">
+                        <li  class="border-1 rounded-md  scale-100 hover:scale-110 bg-white">
+                            <a href="#" >
+                                <img  src="../../Media/Logo/bxl-google.svg">
+                            </a>
+                        </li>
+                        <li class="border-1 rounded-md  scale-100 hover:scale-110 bg-white">
+                            <a href="#"  >
+                                <img src="../../Media/Logo/bxl-facebook.svg">
+                            </a>
+                        </li>
+                        <li  class="border-1 rounded-md  scale-100 hover:scale-110 bg-white">
+                            <a href="#" >
+                                <img src="../../Media/Logo/bxl-github.svg">
+                            </a>
+                        </li>
+                        <li class="border-1 rounded-md  scale-100 hover:scale-110 bg-white">
+                            <a href="#"  >
+                                <img src="../../Media/Logo/bxl-linkedin.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    
+                
+                <div class=" flex flex-col  w-full justify-start items-center md:mt-4 ">
+    
+                    <h5 class=" underline decoration-1 text-xl text-black">
+                        Company
+                    </h5>
+                    <ul class=" flex flex-col mt-3 text-gray-800 ">
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Articles</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Help?</a>
+                    </ul>
+    
+                </div>
+    
+                <div class=" flex flex-col w-full justify-start items-center md:mt-4">
+    
+                    <h5 class=" underline decoration-1 text-xl text-black">
+                        Tools
+                    </h5>
+                    <ul class=" flex flex-col mt-3 text-gray-800">
+                        <a href="#">Text Encryption</a>
+                        <a href="#">Text Encryption</a>
+                        <a href="#">Text Encryption</a>
+                        <a href="#">Text Encryption</a>
+                        <a href="#">Text Encryption</a>
+                        <a href="#">Text Encryption</a>
+                    </ul>
+                </div>
+    
+                <div class=" flex flex-col w-full justify-start items-center md:mt-4">
+    
+                    <h5 class=" underline decoration-1 text-xl text-black">
+                        Legal
+                    </h5>
+                    <ul class=" flex flex-col mt-3 text-gray-800">
+                        <a href="#">Privacy notice</a>
+                        <a href="#">Terms and Conditions</a>
+                        <a href="#">Cookies</a>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="  bg-purple-400 flex justify-center items-center p-4 ">
+
+                <h1 class=" p-3 text-gray-800">
+                    Copyright &copy; Suite-X. All rights reserved.
+                </h1>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const list = document.getElementById('list');
+        const Hamburger = document.getElementById('burger');
+        const bars = document.querySelector('.fa-bars')
+        const logo = document.getElementById('logo')
+      
+
+        Hamburger.addEventListener('click', ()=>{
+
+            list.classList.toggle('translate-x-0');
+            bars.classList.toggle('fa-xmark');
+            logo.classList.toggle('text-slate-900');
+            logo.classList.toggle('border-slate-900');
+            
+        }
+        )
+
+        function toggleDropdown(){
+            let dropdown = document.querySelector("#dropdownButton #dropdown");
+            dropdown.classList.toggle("hidden");
+        }
+        function toggleDropdown1(){
+            let dropdown = document.querySelector("#dropdownButton1 #dropdown1");
+            dropdown.classList.toggle("hidden");
+        }
+        dropdown.addEventListener("mouseover", function() {
+            dropdown.classList.remove("hidden"); // Show dropdown when mouse enters
+        });
+        
+        dropdown.addEventListener("mouseleave", function() {
+            dropdown.classList.add("hidden"); // Hide dropdown when mouse leaves
+        });
+
+    </script>
+</body>
+</html>
